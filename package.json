@@ -4,7 +4,7 @@
   "description": "",
   "types": "PipeWrench-Utils.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/Konijima/pzpw-pipewrench-utils/issues"
   },
-  "homepage": "https://github.com/Konijima/pzpw-pipewrench-utils#readme"
+  "homepage": "https://github.com/Konijima/pzpw-pipewrench-utils#readme",
+  "dependencies": {
+    "lua-types": "^2.12.0",
+    "typescript": "^4.7.4"
+  }
 }
