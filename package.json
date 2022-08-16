@@ -1,5 +1,5 @@
 {
-  "name": "pipewrench-utils",
+  "name": "pzpw-pipewrench-utils",
   "version": "1.0.0",
   "description": "",
   "types": "PipeWrench-Utils.d.ts",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asledgehammer/PipeWrench-Utils.git"
+    "url": "git+https://github.com/Konijima/pzpw-pipewrench-utils.git"
   },
   "keywords": [
     "pipewrench",
@@ -25,7 +25,7 @@
   "author": "asledgehammer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/asledgehammer/PipeWrench-Utils/issues"
+    "url": "https://github.com/Konijima/pzpw-pipewrench-utils/issues"
   },
-  "homepage": "https://github.com/asledgehammer/PipeWrench-Utils#readme"
+  "homepage": "https://github.com/Konijima/pzpw-pipewrench-utils#readme"
 }
