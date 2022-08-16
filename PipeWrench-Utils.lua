@@ -90,9 +90,15 @@ local getGlobal = function(target)
     return original
 end
 
+---@param module string The lua file to require
+local requireLua = function(module)
+    return require(module)
+end
+
 local Exports = {}
 Exports.syncCallback = SyncCallback()
 Exports.hookInto = hookInto
 Exports.getGlobal = getGlobal
+Exports.requireLua = requireLua
 function Exports.isPipeWrenchLoaded() return _G.PIPEWRENCH_READY ~= nil end
 return Exports

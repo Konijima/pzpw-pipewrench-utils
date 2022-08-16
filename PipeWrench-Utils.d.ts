@@ -62,3 +62,17 @@ declare module 'PipeWrench-Utils' {
    */
   export const getGlobal: <T>(target: string) => T;
 }
+
+/**
+ * requireLua by Konijima, 8/16/2022
+ */
+ declare module 'PipeWrench-Utils' {
+  /**
+   * @noSelf
+   * 
+   * Get a global object and cast a type
+   * @param module The lua file to require
+   * @return object | null
+   */
+  export const requireLua: <T>(module: string) => T;
+}
