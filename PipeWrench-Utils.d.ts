@@ -70,9 +70,10 @@ declare module 'PipeWrench-Utils' {
   /**
    * @noSelf
    * 
-   * Require a lua file and cast a type to the returned value
+   * Require a lua file and cast a type to the returned value.  
+   * Use to ensure that the compiler do not modify the module result.
    * @param module The lua file to require
-   * @return object | null
+   * @return T | unknown
    */
   export const requireLua: <T>(module: string) => T;
 }

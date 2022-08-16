@@ -20,10 +20,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 
-local ____lualib = require("lualib_bundle")
-local __TS__StringReplaceAll = ____lualib.__TS__StringReplaceAll
-local __TS__StringSplit = ____lualib.__TS__StringSplit
-
 local SyncCallback = function()
     local o = {}
     o.callbacks = {}
@@ -45,8 +41,8 @@ local hookInto = function(target, hook)
   if type(target) ~= "string" then error("Hook 'target' param must be a string."); end
   if type(hook) ~= "function" then error("Hook 'hook' param must be a function."); end
   print(("Hooking into " .. target) .. "...")
-  target = __TS__StringReplaceAll(target, ":", ".")
-  local splits = __TS__StringSplit(target, ".")
+  target = replaceWith(target, "\:", ".")
+  local splits = luautils.split(target, ".")
   local original = _G[splits[1]]
   do
       local i = 1
@@ -73,8 +69,8 @@ end
 
 ---@param target string The target object/method fullpath
 local getGlobal = function(target)
-    target = __TS__StringReplaceAll(target, ":", ".")
-    local splits = __TS__StringSplit(target, ".")
+    target = replaceWith(target, "\:", ".")
+    local splits = luautils.split(target, ".")
     local original = _G[splits[1]]
     do
         local i = 1
