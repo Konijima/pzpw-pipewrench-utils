@@ -37,7 +37,7 @@ declare module 'PipeWrench-Utils' {
 /**
  * hookInto by Konijima, 8/5/2022
  */
- declare module 'PipeWrench-Utils' {
+declare module 'PipeWrench-Utils' {
   /**
    * @noSelf
    * 
@@ -66,11 +66,11 @@ declare module 'PipeWrench-Utils' {
 /**
  * requireLua by Konijima, 8/16/2022
  */
- declare module 'PipeWrench-Utils' {
+declare module 'PipeWrench-Utils' {
   /**
    * @noSelf
    * 
-   * Get a global object and cast a type
+   * Require a lua file and cast a type to the returned value
    * @param module The lua file to require
    * @return object | null
    */
